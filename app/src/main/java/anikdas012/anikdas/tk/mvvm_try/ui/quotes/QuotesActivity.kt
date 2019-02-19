@@ -1,8 +1,9 @@
-package anikdas012.anikdas.tk.mvvm_try
+package anikdas012.anikdas.tk.mvvm_try.ui.quotes
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
+import anikdas012.anikdas.tk.mvvm_try.R
 
 /**
  * Created by anikdas012 on 2/19/2019
