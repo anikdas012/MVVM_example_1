@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tv_quote"
+        android:layout_above="@id/quote_edit"
+        android:layout_marginBottom="5dp"
+        android:textColor="#FF152934"
+        android:textSize="18sp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/quote_edit"
+        android:hint="Quote"
+        android:layout_above="@id/author_edit"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="105dp"
+        android:textSize="16sp"
+        android:textColor="#FF152934"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/author_edit"
+        android:hint="Author"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="105dp"
+        android:textSize="16sp"
+        android:textColor="#FF152934"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:id="@+id/add_quote"
+        android:layout_alignTop="@id/quote_edit"
+        android:layout_alignBottom="@id/author_edit"
+        android:layout_alignParentEnd="true"
+        android:background="#FF152934"
+        android:textColor="#ffffff"
+        android:text="Add Quote"
+        android:textAllCaps="false"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
 
 </RelativeLayout>
