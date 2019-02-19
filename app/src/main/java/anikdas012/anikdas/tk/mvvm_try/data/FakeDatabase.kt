@@ -5,6 +5,9 @@ package anikdas012.anikdas.tk.mvvm_try.data
  */
 class FakeDatabase private constructor(){
 
+    var quoteDAO = FakeQuoteDAO()
+    private set
+
     companion object {
         @Volatile private var instance: FakeDatabase? = null
 
