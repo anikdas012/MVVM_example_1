@@ -1,7 +1,7 @@
 package anikdas012.anikdas.tk.mvvm_try.ui.quotes
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import anikdas012.anikdas.tk.mvvm_try.R
 

@@ -7,7 +7,7 @@
     android:windowSoftInputMode="stateHidden"
     tools:context=".ui.quotes.QuotesActivity">
 
-    <android.support.v7.widget.AppCompatTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/tv_quote"
@@ -17,7 +17,7 @@
         android:textSize="18sp"
         android:background="#e6e6ff"/>
 
-    <android.support.v7.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/quote_edit"
@@ -29,7 +29,7 @@
         android:textSize="16sp"
         android:textColor="#FF152934"/>
 
-    <android.support.v7.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/author_edit"
@@ -41,7 +41,7 @@
         android:textSize="16sp"
         android:textColor="#FF152934"/>
 
-    <android.support.v7.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatButton
         android:layout_width="100dp"
         android:layout_height="110dp"
         android:id="@+id/add_quote"
