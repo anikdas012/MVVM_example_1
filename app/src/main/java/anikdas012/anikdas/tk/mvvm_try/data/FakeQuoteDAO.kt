@@ -19,5 +19,5 @@ class FakeQuoteDAO {
         quotes.value = quoteList
     }
 
-    fun getQuote() = quotes as LiveData<List<Quote>>
+    fun getQuote() = quotes as LiveData<List<Quote>> 
 }
