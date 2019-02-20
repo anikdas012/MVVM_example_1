@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import anikdas012.anikdas.tk.mvvm_try.R
+import anikdas012.anikdas.tk.mvvm_try.utillities.InjectorUtils
 
 /**
  * Created by anikdas012 on 2/19/2019
@@ -20,6 +21,7 @@ class QuotesActivity: AppCompatActivity() {
     }
 
     private fun initializeUi() {
-
+        val factory = InjectorUtils.provideQuotesViewModelFactory()
+        
     }
 }
