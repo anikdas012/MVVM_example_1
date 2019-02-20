@@ -3,6 +3,8 @@ package anikdas012.anikdas.tk.mvvm_try.ui.quotes
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.ViewModelProviders
 import anikdas012.anikdas.tk.mvvm_try.R
 import anikdas012.anikdas.tk.mvvm_try.utillities.InjectorUtils
 
@@ -22,6 +24,7 @@ class QuotesActivity: AppCompatActivity() {
 
     private fun initializeUi() {
         val factory = InjectorUtils.provideQuotesViewModelFactory()
-        
+        val viewModel = ViewModelProviders.of(this, factory)
+                .get(QuotesViewModel::class.java)
     }
 }
