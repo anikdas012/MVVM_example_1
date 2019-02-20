@@ -16,5 +16,10 @@ class QuotesActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.d(LOG_TAG, "onCreate")
         setContentView(R.layout.activity_quotes)
+        initializeUi()
+    }
+
+    private fun initializeUi() {
+
     }
 }
