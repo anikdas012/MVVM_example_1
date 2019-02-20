@@ -5,6 +5,11 @@ package anikdas012.anikdas.tk.mvvm_try.data
  */
 class QuoteRepository private constructor(private val quoteDAO: FakeQuoteDAO){
 
+    fun addQuote(quote: Quote) {
+        quoteDAO.addQuote(quote)
+    }
+
+
     companion object {
         @Volatile private var instance: QuoteRepository? = null
 
