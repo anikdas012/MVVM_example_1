@@ -34,5 +34,12 @@ class QuotesActivity: AppCompatActivity() {
         val viewModel = ViewModelProviders.of(this, factory)
                 .get(QuotesViewModel::class.java)
 
+        viewModel.getQuotes().observe(this, Observer { quote ->
+            val stringBuilder = StringBuilder()
+            quote.forEach { quote ->
+                stringBuilder.append("$quote\n\n")
+            }
+            textView_quote.text = stringBuilder.toString()
+        })
     }
 }
